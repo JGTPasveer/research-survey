@@ -8,7 +8,8 @@ const app = express();
 app.use(express.json());
 
 app.use(cors({
-  origin: 'https://jgtpasveer.github.io', 
+  // Change this 'origin' to the service you are hosting the frontend on
+  origin: 'YOUR_FRONTEND_WEBSITE_URL', 
   methods: ['GET', 'POST'],
   credentials: false
 }));
